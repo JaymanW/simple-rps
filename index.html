@@ -8,28 +8,50 @@
 </head>
 <body>
     <header>
-        <a href="#">
-            <p>Simple<span>RPS</span></p>
+        <a href="#" id="logo">
+            <p>#Simple<span>RPS</span></p>
         </a>
-        <img src="img/gear35.png" alt="">
+        <button id="settings">
+            <img src="img/gear35.png" alt="">
+        </button>
     </header>
     <main>
         <div class="game-wrapper">
-            <h1>#Simple<span>RPS</span></h1>
-            <span>PRESS TO START</span>
+            <h1 class="title">#Simple<span class="title-blue">RPS</span></h1>
+            <span id="game-message">PRESS TO START</span>
             <div class="rps-cnt">
-                <button id="rock-btn">
-                    <img src="img/rock.png" alt="">
-                </button>
-                <button id="paper-btn">
-                    <img src="img/paper.png" alt="">
-                </button>
-                <button id="scissors-btn">
-                    <img src="img/scissors.png" alt="">
-                </button>
+                <div class="selection-cnt">   
+                    <button id="rock-btn">
+                        <img src="img/rock.png" alt="">
+                    </button>
+                    <div class="indicator-cnt">
+                        <img src="img/blueIndicator25.png" class="blue-indicator" alt="">
+                        <img src="img/redIndicator25.png" class="red-indicator" alt="">
+                    </div>
+                </div>
+
+                <div class="selection-cnt">   
+                    <button id="paper-btn">
+                        <img src="img/paper.png" alt="">
+                    </button>
+                    <div class="indicator-cnt">
+                        <img src="img/blueIndicator25.png" class="blue-indicator" alt="">
+                        <img src="img/redIndicator25.png" class="red-indicator" alt="">
+                    </div>
+                </div>
+
+                <div class="selection-cnt">   
+                    <button id="scissors-btn">
+                        <img src="img/scissors.png" class="scissors-img" alt="">
+                    </button>
+                    <div class="indicator-cnt">
+                        <img src="img/blueIndicator25.png" class="blue-indicator" alt="">
+                        <img src="img/redIndicator25.png" class="red-indicator" alt="">
+                    </div>
+                </div>
             </div>
             <button id="action-btn"><span>START</span></button>
-            <p>Your score: <span>0</span></p>
+            <p id="score">Your score: <span>0</span></p>
         </div>
     </main>
 </body>
